@@ -36,8 +36,8 @@ Run HRI node:
 ```bash
 ros2 run hri_aruco hri_node
 ```
-This node subscribes to the image topic (camera feed), detects ArUco marker using opencv, and depending on marker pose, sends goal commands to **joint trajectory action**.
-
+This node subscribes to the image topic (camera feed), detects ArUco marker using opencv, and depending on marker pose in the image, sends goal commands to **joint trajectory action**.
+> You can use the ArUco tag image: `resource/marker_42_a.png`
 
 ### Option 2: controlling the robot using MoveIt interface
 Run robot simulation:
@@ -54,6 +54,7 @@ Run HRI node:
 ros2 run hri_aruco hri_node
 ```
 This node subscribes to the image topic (camera feed), detects ArUco marker using opencv, and depending on marker pose, sends goal commands on **custom topic**. 
+> You can use the ArUco tag image: `resource/marker_42_a.png`
 
 Use the node from the package [ur_moveit_interface](https://github.com/BartlomiejKulecki/ur_moveit_interface.git) which subscribes to that custom topic and sends commands to **MoveIt**:
 ```bash
