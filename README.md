@@ -7,6 +7,10 @@ This is a ROS 2 package for controlling the UR robotic arm using the ArUco marke
 ## Requirements
 
 - ROS 2 Jazzy
+- clone this package to your `ros2_ws/src` directory:
+    ```bash
+    git clone https://github.com/BartlomiejKulecki/HRI_aruco.git
+    ```
 - install required Python packages using script:
     ```bash
     ./requirements.sh
@@ -19,6 +23,7 @@ This is a ROS 2 package for controlling the UR robotic arm using the ArUco marke
     ```bash
     git clone https://github.com/BartlomiejKulecki/ur_moveit_interface.git
     ```
+Build the workspace using colcon.
 
 ## Running
 
